@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+
+        <main>
+            <div class="card">
+                <h2>Unit Converter</h2>
+                <div class="controls">
+                    <input type="number" id="value" placeholder="Value" aria-label="value to convert">
+                    <select id="fromUnit" aria-label="convert from">
+                        <option value="C">Celsius (°C)</option>
+                        <option value="F">Fahrenheit (°F)</option>
+                        <option value="K">Kelvin (K)</option>
+                    </select>
+                    <select id="toUnit" aria-label="convert to">
+                        <option value="F">Fahrenheit (°F)</option>
+                        <option value="C">Celsius (°C)</option>
+                        <option value="K">Kelvin (K)</option>
+                    </select>
+                </div>
+                <div class="controls" style="margin-top:12px;">
+                    <button id="convertBtn">Convert</button>
+                    <button id="swapBtn" title="Swap units">↔ Swap</button>
+                </div>
+
+                <div>
+                    <p id="answer" aria-live="polite">solution</p>
+                </div>
+            </div>
+        </main>
+<script src="index.js"></script>
+</body>
+</html>

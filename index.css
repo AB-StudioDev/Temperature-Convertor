@@ -1,0 +1,93 @@
+/* Page layout */
+html, body {
+	height: 100%;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+	background: linear-gradient(180deg,#f7fbff,#eef6ff);
+	color: #0b2545;
+}
+
+main, .container {
+	min-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 24px;
+	box-sizing: border-box;
+}
+
+/* Card */
+.card {
+	background: #ffffff;
+	border-radius: 12px;
+	box-shadow: 0 6px 18px rgba(11,37,69,0.08);
+	padding: 28px 32px;
+	max-width: 420px;
+	width: 100%;
+	text-align: center;
+}
+
+/* Input + button */
+input[type="number"] {
+	width: 140px;
+	padding: 10px 12px;
+	font-size: 16px;
+	border: 1px solid rgba(11,37,69,0.12);
+	border-radius: 8px;
+	margin-right: 12px;
+}
+
+button {
+	padding: 10px 14px;
+	font-size: 15px;
+	border-radius: 8px;
+	border: none;
+	background: #0b63ff;
+	color: #fff;
+	cursor: pointer;
+	box-shadow: 0 4px 10px rgba(11,99,255,0.12);
+}
+
+button:active { transform: translateY(1px); }
+
+/* Answer */
+#answer {
+	margin-top: 1px;
+	font-weight: 600;
+	font-size: 18px;
+	padding: 10px 14px;
+	border-radius: 8px;
+	background: linear-gradient(90deg, rgba(11,99,255,0.06), rgba(11,37,69,0.02));
+	display: inline-block;
+}
+
+/* Small screens */
+@media (max-width: 440px) {
+	input[type="number"] { width: 100%; margin: 0 0 12px 0; }
+	button { width: 100%; }
+	.card { padding: 20px; }
+}
+
+/* Utility spacing for your current HTML */
+.controls { display: flex; align-items: center; justify-content: center; gap: 8px; }
+
+select {
+	padding: 9px 10px;
+	border-radius: 8px;
+	border: 1px solid rgba(11,37,69,0.12);
+	background: #fff;
+	font-size: 15px;
+}
+
+h2 { margin: 0 0 12px 0; font-size: 20px; }
+
+/* Button spacing */
+#convertBtn, #swapBtn {
+	padding: 9px 12px;
+	border-radius: 8px;
+	font-size: 15px;
+}
+h2 { margin: 0 0 12px 0; font-size: 20px; }
+
+/* Tighter layout when card is displayed */
+.card { display: inline-block; }
