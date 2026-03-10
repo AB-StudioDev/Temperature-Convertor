@@ -1,0 +1,94 @@
+#choice button{
+    padding-top: 40px;
+    font-size: 72px;
+    background-color: rgb(27, 27, 27);
+    border:solid;
+    border-color: blue;
+    border-width: 10px;
+    box-shadow: yellow;
+    border-radius: 300px;
+    padding: 15px;
+  
+}
+.buttonbtn{
+    font-size: 73px;
+   background-color: white; 
+}
+.rockbtn , .paperbtn , .scissorbtn{
+    
+    font-size: 72px;
+    text-align: center;
+width: 130px;   
+height: 130px;
+align-items: center;
+    border:solid;
+    border-color: rgb(255, 0, 0);
+    border-width: 10px;
+    background-color: rgb(239, 234, 234);
+    box-shadow: yellow;
+    border-radius: 100px;
+   
+}
+.scissorbtn button, .rockbtn button , .paperbtn button{
+    font-size: 72px;
+    border:none;
+    background: none;
+    padding-top: 10px;
+}
+
+#choice button:hover{
+    background-color: hsl(0, 1%, 53%);
+    font-size: 72.7px;
+
+
+}
+body{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    display: flex;
+    font-weight: bolder;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+}
+#playerDisplay , #computerDisplay{
+font-size: 2rem;
+}
+#result {
+font-size: 4rem;
+margin: 30px 0;
+
+}
+.scoreDisplay{
+    font-size: 2rem;
+    margin: 10px 0;
+
+}
+#playerScoreDisplay{
+color: blue;
+}
+#computerScoreDisplay{
+    color: rgba(245, 10, 10, 0.977);
+}
+.greenColor{
+  color: rgb(33, 253, 33) 
+}
+.redColor{
+    color: rgba(245, 10, 10, 0.977);
+}
+
+#resetbtn{
+  
+font-size: large;
+background-color: rgb(251, 42, 42);
+border-radius: 100px;
+font-size: 30px;
+    text-align: center;
+width: 100px;   
+height: 100px;
+align-items: center;
+
+}
+#resetbtn button{
+    padding-bottom: 800px;
+}

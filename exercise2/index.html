@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<label>SOUP🍲    $4</label>
+<div></div>
+<input type="number" id="soup" min="1" style="width: 30px;border: solid;">    
+<button  onclick="soupOrderClicked()">order</button>
+<br><hr>
+
+<label>CAKE🍥    $5</label>
+<div></div>
+<input type="number" id="cake" min="1" style="width: 30px;border: solid;">    
+<button  onclick="cakeOrderClicked()">order</button>
+<br><hr>
+
+<label>BAGELS🥯   $2</label>
+<div></div>
+<input type="number" id="bagels" min="1" style="width: 30px;border: solid;">    
+<button  onclick="bagelsOrderClicked()">order</button>
+<br>
+
+<button onclick="totalbtn()">total</button>
+
+<script>
+
+function soupOrderClicked(){
+    let soup = document.getElementById("soup").value;
+    soup = Number(soup)
+    soup *=4
+    console.log("$"+soup);
+}
+
+function cakeOrderClicked(){
+    let cake = document.getElementById("cake").value;
+    cake = Number(cake)
+    cake *=5
+    console.log("$"+cake);
+
+}
+
+function bagelsOrderClicked(){
+ 
+    let bagels = document.getElementById("bagels").value;
+    bagels = Number(bagels)
+    bagels *=2
+    console.log("$"+bagels);
+
+}
+  function totalbtn(){
+
+     let soup = document.getElementById("soup").value;
+    soup = Number(soup)
+    soup *=4
+
+    let cake = document.getElementById("cake").value;
+    cake = Number(cake)
+    cake *=5
+
+    let bagels = document.getElementById("bagels").value;
+    bagels = Number(bagels)
+    bagels *=2
+
+const total = cake + bagels + soup;
+console.log("total (with 15% tax): $" + (total * 0.15))
+}
+  
+
+</script>
+</body>
+</html>
